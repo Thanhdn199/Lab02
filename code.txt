@@ -1,0 +1,96 @@
+import java.util.ArrayList;
+
+public class Cart {
+    private ArrayList<DigitalVideoDisc> items = new ArrayList<>();
+    private int qtyOrdered = 0;
+
+    // Method to add a DVD to the cart
+    public void addDigitalVideoDisc(DigitalVideoDisc disc) {
+        items.add(disc);
+        qtyOrdered++;
+        System.out.println("Added " + disc.getTitle() + " to the cart.");
+    }
+
+    // Method to display all DVDs in the cart
+    public void displayCart() {
+        System.out.println("Cart contains " + qtyOrdered + " items:");
+        for (DigitalVideoDisc disc : items) {
+            disc.displayInfo();
+            System.out.println();
+        }
+    }
+}
+package a;
+
+import java.util.ArrayList;
+
+public class Cart {
+    private ArrayList<DigitalVideoDisc> items = new ArrayList<>();
+    private int qtyOrdered = 0;
+
+    // Method to add a DVD to the cart
+    public void addDigitalVideoDisc(DigitalVideoDisc disc) {
+        items.add(disc);
+        qtyOrdered++;
+        System.out.println("Added " + disc.getTitle() + " to the cart.");
+    }
+
+    // Method to display all DVDs in the cart
+    public void displayCart() {
+        System.out.println("Cart contains " + qtyOrdered + " items:");
+        for (DigitalVideoDisc disc : items) {
+            disc.displayInfo();
+            System.out.println();
+        }
+    }
+}
+
+package a;
+
+public class DigitalVideoDisc {
+    private String title;
+    private String category;
+    private String director;
+    private int length;
+    private float cost;
+
+    // Constructor
+    public DigitalVideoDisc(String title, String category, String director, int length, float cost) {
+        this.title = title;
+        this.category = category;
+        this.director = director;
+        this.length = length;
+        this.cost = cost;
+    }
+
+    // Getter for title
+    public String getTitle() {
+        return title;
+    }
+
+    // Other getters (if needed)
+    public String getCategory() {
+        return category;
+    }
+
+    public String getDirector() {
+        return director;
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+    public float getCost() {
+        return cost;
+    }
+
+    // Method to display DVD details
+    public void displayInfo() {
+        System.out.println("Title: " + title);
+        System.out.println("Category: " + category);
+        System.out.println("Director: " + director);
+        System.out.println("Length: " + length);
+        System.out.println("Cost: $" + cost);
+    }
+}

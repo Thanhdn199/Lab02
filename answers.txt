@@ -1,0 +1,1 @@
+Đúng vậy, Java cho phép bạn tạo nhiều constructor trong cùng một lớp, với điều kiện mỗi constructor có một danh sách tham số khác biệt. Khái niệm này được gọi là nạp chồng constructor (constructor overloading). Điều này giúp bạn linh hoạt khi khởi tạo đối tượng với các tham số khác nhau mà không cần phải tạo các lớp riêng biệt hoặc phương thức khởi tạo phức tạp.
